@@ -1,0 +1,13 @@
+<!-- format of `The date is Wednesday, November 18, 2015`-->
+
+<!-- d.strftime("Printed on %m/%d/%Y")   #=> "Printed on 11/19/2007" -->
+
+
+<%today = DateTime.now%>  <!-- #<DateTime : 2011-06-11T21:20:44+09:00 ...> -->
+<h1><%=today.strftime("Today is %A, %B %d, %Y")%></h1>
+
+<!-- %A = full name of day for that date -->
+<!-- %B = Full name of month for that date -->
+<!-- %d = day of date -->
+<!-- %Y year of date -->
+<!-- %D would give you MM/DD/YY -->
